@@ -1,6 +1,6 @@
 #jQuery Orin.js
 ***********
-A tiny jQuery lightbox plugin with cool effects.
+A tiny jQuery lightbox plugin with cool effects. (Currently the magic works only on webkit browsers)
 
 ###So, what does it actually do? 
 
