@@ -1,0 +1,18 @@
+{
+  "name": "orin.js",
+  "version": "0.5.0",
+  "authors": [
+    "Anam Ahmed <anam.ahmed.a@gmail.com>"
+  ],
+  "description": "jQuery plugin for great popup lightbox",
+  "main": "index.html",
+  "keywords": [
+    "jquery",
+    "lightbox",
+    "blur",
+    "invert",
+    "grayscale"
+  ],
+  "license": "NPL",
+  "homepage": "http://anam.co/orin"
+}

@@ -1,0 +1,95 @@
+/*Orin.js named after the third important lady in my life, first one is my mother,
+second one is my younger Sister, and then her. 
+Created by : Anam Ahmed
+Licensed under the Mozilla Public License
+Feel free to make modifications, send pull requests or report issues.*/
+
+body{
+	-webkit-transition:-webkit-filter 1s;
+	transition:-webkit-filter 1s;
+}
+/*styles for the overlay*/
+.orinjs-overlay{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background:black;
+	left:0px;
+	top:0px;
+	background:rgba(0,0,0,0.2); /*don't use opacity, it may kill your cat*/
+	z-index:10000;
+	display:none;
+}
+/*style for the overlay image*/
+.orinjs-overlay img{
+position:absolute;/*I've used absolute centering, don't edit positioning, use margins to shift */
+margin:auto;
+top:0px;right:0px;bottom:0px;left:0px;
+height:70%;
+border-radius:1px;
+/*margin-bottom:120px;*/
+}
+/*style for the details text*/
+.orinjs-overlay p{
+	position:absolute;
+	bottom:8%;
+	color:white;
+	margin:auto;
+	width:100%;
+	text-align:center;
+}
+.orinjs-overlay p>span{
+	background:black;
+	padding:8px;
+}
+/*style for the close button*/
+#orinjs-closebutton{
+	display:block;
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:20px;
+	right:20px;
+	background:url('exit.png') no-repeat;
+	background-size:cover;
+	cursor:pointer;
+}
+
+/*yay!! effect*/
+
+/*effecs common - resets effect for the popup*/
+.orinjs-active .orinjs-overlay{
+	-webkit-filter:none !important;
+}
+.orinjs-active #orinjs-canvas{
+	-webkit-filter:none !important;
+}
+.orinjs-active #orinjs-text{
+	-webkit-filter:none !important;
+}
+.orinjs-active #orinjs-closebutton{
+	-webkit-filter:none !important;
+}
+
+/*and the magics are here*/
+
+/*blur*/
+.orinjs-active.orinjs-blur>*{
+-webkit-filter:blur(10px); /*change the blur radius from here*/
+}
+/*grayscale*/
+.orinjs-active.orinjs-grayscale>*{
+-webkit-filter:grayscale(1); /*change the grayscale rate from here*/
+}
+/*sepia*/
+.orinjs-active.orinjs-sepia>*{
+-webkit-filter:sepia(1); /*change the sepia amount from here*/
+}
+/*invert*/
+.orinjs-active.orinjs-invert>*{
+-webkit-filter:invert(1); /*change the invert amount from here*/
+}
+/*huerotate*/
+.orinjs-active.orinjs-hue-rotate>*{
+-webkit-filter:hue-rotate(90deg); /*change the angle of hue rotation*/
+}

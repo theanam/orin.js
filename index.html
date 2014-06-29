@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Orin.js | Lightbox reimagined</title>
+	<link rel="stylesheet" href="jquery.orin.css">
+</head>
+<body>
+	
+	<div id="name" data-image="a.jpg" data-text="hello world">
+	  anam ahmed
+	</div>
+	<div id="2" data-image="b.jpg" data-text="this is second one">
+	  Farhana Orin
+	</div>
+	<div data-image="b.jpg" data-text="hello world">
+		<img src="a.jpg">
+	</div>
+	<!--script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8">  </script-->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="jquery.orin.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$('div').orin({
+			'effect':'blur', //effect name , other options are grayscale,invert,sepia,hue-rotate
+			'lightboxdiv':'#anam'
+		});
+	</script>
+</body>
+</html>
