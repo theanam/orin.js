@@ -29,6 +29,8 @@ sample markup:
 	 Click to open second image
 	</div>
 
+note that `data-image` and `data-text` attribute? yeah the `data-image` is the path of the image to display, and the `data-text` is the text to show below it
+
 add these javascript codes just before the closing `</body>` tag,
 
 	<script type="text/javascript" charset="utf-8">
