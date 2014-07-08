@@ -19,6 +19,7 @@
 			$('body').append('<div id="'+divname+'"></div>');
 		}
 		// now get the lightbox div element
+		//user abul hoile amar e kam sara lagbo
 		var target = $(lightboxdiv);
 		target.addClass('orinjs-overlay');
 		target.append('<img id="orinjs-canvas" src="">');

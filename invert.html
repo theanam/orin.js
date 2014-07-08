@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Orin.js | Lightbox reimagined</title>
+	<link rel="stylesheet" href="jquery.orin.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a href="https://github.com/theanam/orin.js"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+	<div class="wrapper">
+		<nav class="effectmenu">
+			<a href="index.html">Blur</a>
+			<a href="grayscale.html">Grayscale</a>
+			<a href="invert.html">Invery</a>
+			<a href="sepia.html">Sepia</a>
+			<a href="huerotate.html">Hue Rotate</a>
+		</nav>
+		<p>Click on the images to see the magic</p>
+		<img src="img/1_t.jpg" class="thumb" data-image="img/1.jpg" data-text="Hard Rock Guitar">
+		<img src="img/2_t.jpg" class="thumb" data-image="img/2.jpg" data-text="Pop Singer">
+		<img src="img/3_t.jpg" class="thumb" data-image="img/3.jpg" data-text="Guitar in Blue tone">
+		<img src="img/4_t.jpg" class="thumb" data-image="img/4.jpg" data-text="Another Singer">
+	<br>
+	<h2 class="mrgn">Just some sample text to demonstrate the effect better</h2>
+	<div class="lorem">
+
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	<span style="color:red">
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	</span>
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+	</div>
+	<!--script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8">  </script-->
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="jquery.orin.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$('.thumb').orin({
+			'effect':'invert', //effect name , other options are grayscale,invert,sepia,hue-rotate
+			'lightboxdiv':'#anam'
+		});
+	</script>
+</body>
+</html>
