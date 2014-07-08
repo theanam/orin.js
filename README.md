@@ -2,6 +2,8 @@
 ***********
 A tiny jQuery lightbox plugin with cool effects. (Currently the magic works only on webkit browsers)
 
+####See it in action: [here](http://theanam.github.io/orin.js/)
+
 ###So, what does it actually do? 
 
 well, it's like an ordinary lightbox, but it can create pretty awesome effects on the background.
